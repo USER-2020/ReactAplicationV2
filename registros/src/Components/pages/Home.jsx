@@ -3,11 +3,11 @@ import Container from 'react-bootstrap/Container';
 
 function Home(){
     return(
-        <Container>
-        <div>
+        
+        <div className="container">
             <h1>Inicio </h1>
         </div>
-        </Container>
+        
 
 );
     

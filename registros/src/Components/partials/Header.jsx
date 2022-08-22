@@ -13,8 +13,7 @@
             return(
                 <>
                 
-
-               {[ 'sm'].map((expand) => (
+        {[ 'sm'].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3">
           <Container fluid>
             <Navbar.Brand className="m-auto" href="#home"><img src={image} width="100" height="auto" center/></Navbar.Brand>
@@ -31,14 +30,15 @@
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Store</Nav.Link>
+                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="#">Store</Nav.Link>
                   <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                     <NavDropdown.Item href="#action3">About Us</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">Redes Sociales</NavDropdown.Item>
+                    <NavDropdown.Item href="/registro">sign Up</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">Login</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
                       Something else here
@@ -52,7 +52,7 @@
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button variant="outline-danger">Search</Button>
                 </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
