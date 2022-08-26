@@ -48,9 +48,9 @@ app.post('/registrar', function(req, res){
 
 //Usar estaicos en modo produccion 
 if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('frontend/build'));
+    app.use(express.static('registros/build'));
     app.get("*", (req, res) => {
-        res.sendFile((__dirname + "/frontend/build/index.html"));
+        res.sendFile((__dirname + "/registros/build/index.html"));
     })
 
 }
