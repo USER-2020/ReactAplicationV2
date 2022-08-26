@@ -14,7 +14,7 @@
     //Crear funcion handleClick para cambiar el valor por el escrito por el teclado
     function handleChange(event){
       // console.log(input);
-      const {name, value}=event.target;
+      const {name, value}= event.target;
       //guardar el evento anterior
       setInput(prevInput => {
         return{
@@ -39,7 +39,7 @@
       }
 
       //Submit al servidor o bd metodo post de axios
-      axios.post("/registrar", nUsuario);
+      axios.post('/registrar', nUsuario);
     }
       return(
     <div className="container">
@@ -48,7 +48,7 @@
       {/* <h1 class="h3 mb-3 fw-normal">Please sign in</h1> */}
 
 
-     <div class="input-group mb-3">
+     <div className="input-group mb-3">
       <input onChange={handleChange} name="firstName" value={input.firstName} type="text" className="form-control" id="floatingInput" placeholder="FirstName" />
       
       {/* <span class="input-group-text">@</span> */}
@@ -57,18 +57,16 @@
       
       </div>
       <div className="form-floating mb-3">
-        <input onChange={handleChange} name="email" value={input.email} type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
+        <input onChange={handleChange} name="email" value={input.email} type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
         <label for="floatingInput">Email address</label>
       </div>
       <div className="form-floating mb-3">
-        <input onChange={handleChange} name="password" value={input.password} type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
+        <input onChange={handleChange} name="password" value={input.password} type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
         <label for="floatingPassword">Password</label>
       </div>
 
       <div className="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"/> Remember me
-        </label>
+       
       </div>
       <button onClick={handleClick} className="w-100 btn btn-lg " id="mybutton" type="submit">Sign in</button>
       <p className="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
