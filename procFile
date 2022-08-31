@@ -1,1 +1,1 @@
-web: node database.js
+web: npm start database.js
