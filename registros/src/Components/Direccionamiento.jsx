@@ -6,8 +6,8 @@ import Registro from "./pages/Registro";
 function Direccionamiento(){
     return(
         <Routes>
-            <Route path = "/" element = {<Home/>}/>
-            <Route path = "/registro" element = {<Registro/>}/>
+            <Route path = "" element = {<Home/>}/>
+            <Route path = "registro" element = {<Registro/>}/>
         </Routes>
     );
 }
